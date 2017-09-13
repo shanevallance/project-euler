@@ -1,17 +1,15 @@
 /* 
-  Brute force, incrementing through 1-to-variable checking modulo.
-  Would like to find a more streamlined approach.
+  If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+  Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
-function divThreeFive(num) {
-  var sum = 0;
-  while (num > 0){
-    if (num % 3 === 0 || num % 5 === 0){
-      console.log(num);
-      sum = sum + num;
+function divFiveThree(num) {
+  let sum = 0;
+  for (i = 0; i < num; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum = sum + i;
     }
-    num --;
   }
-  console.log(sum);
+  return sum;
 }
-divThreeFive(1000);
+
