@@ -11,7 +11,7 @@ function fibonacciSumEven(){
   let fibonacciSum = 0;
   let prevFibonacciSum = 0;
   let currentFibonacciSum = 1;
-  for (i = 0; i < 4000000000; i = fibonacciSum){
+  for (i = 0; i < 4000000; i = fibonacciSum){
     fibonacciSum = prevFibonacciSum + currentFibonacciSum;
     prevFibonacciSum = currentFibonacciSum
     currentFibonacciSum = fibonacciSum

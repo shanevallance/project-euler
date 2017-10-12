@@ -4,7 +4,6 @@
 */
 
 function largestPrimeFactor (n) {
-  let largest = n;
   while (n % 2 === 0) {
     n /= 2;
   }
